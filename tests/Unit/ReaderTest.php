@@ -16,10 +16,9 @@ class ReaderTest extends TestCase
         $version = '1.0';
         $filename = 'test.md';
         $filePath = "{$path}/tests/docs/{$version}";
-       
+
         // when
         $contents = Reader::read($filePath, $filename);
-
         // then
         $this->assertEquals($contents, $fileContent);
     }
